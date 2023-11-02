@@ -57,6 +57,7 @@
 }
 
 .navBox:first-child {
+  cursor:pointer;
   color: #101010;
   font-size: 16px;
   font-weight: 600;
@@ -67,6 +68,7 @@
 }
 
 .navBox {
+  cursor:pointer;
   color: #8D8D8D;
   font-size: 16px;
   gap: 15px;
@@ -88,6 +90,7 @@
   font: normal normal 600 16px/19px Gilroy;
   letter-spacing: 0px;
   color: #88C2BB;
+  cursor:pointer;
   opacity: 1;
 }
 

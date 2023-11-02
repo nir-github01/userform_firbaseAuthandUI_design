@@ -24,11 +24,15 @@ function Form({ signUp }) {
     if (signUp) {
       setForm({ ...form, [event.target.name]: event.target.value });
       setBtnDisabled(false)
-      if(form.new_password !== form.confirm_password && form.confirm_password !== null){
-        let messages = "Password doesnot Match";
-        setPwdError(messages);
-      }else{
-        setPwdError('')
+      if(form.new_password && form.confirm_password){
+        if(form.new_password !== form.confirm_password){
+          let messages = "Password doesnot Match";
+          setPwdError(messages);
+        }
+
+        if(form.new_password == form.confirm_password){
+          setPwdError(" ");
+        }
       }
     } else {
       setForm({ ...form, [event.target.name]: event.target.value });
