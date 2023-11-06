@@ -6,7 +6,6 @@ import walletIcon from "../Icons/heart.svg";
 import subscriptionIcon from "../Icons/favorite.svg";
 import profileIcon from "../Icons/profile.svg";
 import settingIcon from "../Icons/setting.svg";
-import logoutIcon from "../Icons/logout.svg";
 
 export let navIconsArr = [
   {

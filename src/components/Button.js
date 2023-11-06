@@ -1,4 +1,3 @@
-import { type } from "@testing-library/user-event/dist/type";
 import React from "react";
 
 function Button({ type, nameValue, width, height, disabled, onClick}) {

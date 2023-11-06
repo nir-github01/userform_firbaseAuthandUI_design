@@ -18,7 +18,7 @@ function CheckBox({ termsConditions, label, onChange, name }) {
           className="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300"
         >
           {label}{" "}
-          <a
+          <a href="#none" rel="noreferrer"
             className="text-blue-600 dark:text-blue-500 hover:underline"
           >
             {termsConditions}

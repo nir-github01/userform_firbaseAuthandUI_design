@@ -30,7 +30,7 @@ function Form({ signUp }) {
           setPwdError(messages);
         }
 
-        if(form.new_password == form.confirm_password){
+        if(form.new_password === form.confirm_password){
           setPwdError(" ");
         }
       }
@@ -91,7 +91,7 @@ function Form({ signUp }) {
       })
       .catch(async (error) => {
         setBtnDisabled(false);
-        let errorCode = error.code;
+        // let errorCode = error.code;
         setError(error.message);
         console.log("Error-Value ", error.message);
       });
@@ -107,7 +107,7 @@ function Form({ signUp }) {
          signInWithEmailAndPassword(auth, form.email, form.current_password).then(async(res)=>{
            navigate('/');
          }).catch(async(error) => {
-          let errorCode = error.code;
+          // let errorCode = error.code;
           setError(error.message)
          })
       }else{

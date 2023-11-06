@@ -105,17 +105,17 @@ function Home() {
   let photoPrice = photoRating.map((imagesRate) => {
     return (
       <div className="cardImg" key={imagesRate.id}>
-        <img id="imgListId" src={imagesRate.photo} />
+        <img id="imgListId" src={imagesRate.photo} alt="cards"/>
         <div className="cardcaption">
           <p>{imagesRate.description}</p>
           <div className="pricedivclass">
             <span id="priceSpanId">${imagesRate.price}</span>
             <span className="ratingIconspan">
-              <img src={imagesRate.rating} />
-              <img src={imagesRate.rating} />
-              <img src={imagesRate.rating} />
-              <img src={imagesRate.rating} />
-              <img src={imagesRate.rating} />
+              <img src={imagesRate.rating} alt="sttar1" />
+              <img src={imagesRate.rating} alt="sttar2" />
+              <img src={imagesRate.rating} alt="sttar3" />
+              <img src={imagesRate.rating} alt="sttar4"/>
+              <img src={imagesRate.rating} alt="sttar5"/>
             </span>
           </div>
         </div>
@@ -173,7 +173,7 @@ function Home() {
             <div className="searchBox">
               <span>
                 {" "}
-                <img className="searchIconImg" src={searchIcon} />
+                <img className="searchIconImg" src={searchIcon} alt="icon"/>
               </span>
               <input
                 type="text"
